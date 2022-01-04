@@ -1,19 +1,24 @@
 import React from 'react';
 
-const Accordion = () => {
+const Accordion = ({questions}) => {
 
-
-   return(
-       <div className="accordioncontainer">
-           <div className='element'>
+    let element = questions.map((item,index)=>{
+        return(
+            <div className='element' key={index}>
                <div clasName="question">
-                 <h3>About this site ?</h3>
+                 <h3>{item.question}</h3>
                  <button><i class="fas fa-plus-circle"></i></button>
                </div>
                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <p>{item.answer}</p>
                </div>
            </div>
+        )
+    })
+
+   return(
+       <div className="accordioncontainer">
+           {element}
        </div>
    )
 }
