@@ -1,7 +1,10 @@
-
+import React from 'react';
+import DropDown from './components/DropDown';
 function App() {
+
+  companies =[Apple,Microsoft,Google,Amazon,]
   return (
-    <div>hello</div>
+    <DropDown options={compnies}/>
   );
 }
 
