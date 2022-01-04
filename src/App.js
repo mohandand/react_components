@@ -1,6 +1,7 @@
 import React from 'react';
 import DropDown from './components/DropDown';
 import Accordion from './components/accordion';
+import Modal from './components/modal';
 function App() {
 
   let companies =["Apple","Microsoft","Google","Amazon","ebay"];
@@ -24,6 +25,7 @@ function App() {
     <div className="maincontainer">
       <DropDown companies={companies}/>
       <Accordion questions = {questions}/>
+      <Modal/>
     </div>
   );
 }
