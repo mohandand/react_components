@@ -2,9 +2,10 @@ import React from 'react';
 import DropDown from './components/DropDown';
 function App() {
 
-  companies =[Apple,Microsoft,Google,Amazon,]
+  let companies =["Apple","Microsoft","Google","Amazon","ebay"];
+
   return (
-    <DropDown options={compnies}/>
+    <DropDown companies={companies}/>
   );
 }
 
