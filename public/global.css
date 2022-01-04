@@ -10,6 +10,7 @@
 }
 .accordioncontainer{
     margin: 10px 10px 10px 10px;
+    width:70%;
 }
 .dropdown{
     width:80%;
@@ -22,4 +23,15 @@
     border: 2px solid black;
     margin-top: 10px;
     width:80%;
+}
+.question button{
+    padding: 4px 4px;
+}
+
+h3{
+    display:inline;
+}
+
+.hideText{
+    display: none;
 }
