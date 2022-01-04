@@ -1,11 +1,17 @@
-.container{
+.maincontainer{
+    display: flex;
+    flex-direction: row;
+    width:50%;
+}
+.dropdowncontainer{
     display: flex;
     flex-direction: column;
-    width:30%;
-    position: absolute;
+    width:50%;
+}
+.accordioncontainer{
+    margin: 10px 10px 10px 10px;
 }
 .dropdown{
-    position: relative;
     width:80%;
 }
 .dropdownname{
@@ -15,6 +21,5 @@
     height:100px;
     border: 2px solid black;
     margin-top: 10px;
-    position: relative;
     width:80%;
 }
