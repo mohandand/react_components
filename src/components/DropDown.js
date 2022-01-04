@@ -17,7 +17,7 @@ const DropDown = ({ companies }) => {
     return(
         <div className="container">
           <div className="dropdown">
-            <label>Best Companies</label>
+            <label className="dropdownname">Best Companies</label>
             <select name="cars" id="cars" onChange={retriveOption}>
                 {options}
             </select>

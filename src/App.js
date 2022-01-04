@@ -5,7 +5,9 @@ function App() {
   let companies =["Apple","Microsoft","Google","Amazon","ebay"];
 
   return (
+    <div>
     <DropDown companies={companies}/>
+    </div>
   );
 }
 
