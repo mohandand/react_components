@@ -6,17 +6,17 @@ function App() {
 
   let companies =["Apple","Microsoft","Google","Amazon","ebay"];
 
-  let questions = [
+  let accordionData = [
     {
-        "question":"Which is not example of HTML Tag",
+        "question":"section1",
         "answer": "pen"
     },
     {
-        "question":"Which is an example of HTML Tag",
+        "question":"section2",
         "answer": "bat"
     },
     {
-        "question":"Which is an example of CSS attribute",
+        "question":"section3",
         "answer": "bat"
     }
 ]
@@ -24,7 +24,9 @@ function App() {
   return (
     <div className="maincontainer">
       <DropDown companies={companies}/>
-      <Accordion questions = {questions}/>
+      <div className="accordioncontainer">
+      {accordionData.map((item)=> <Accordion title={item.question} content={item.answer}/>)}
+      </div>
       <Modal/>
     </div>
   );
