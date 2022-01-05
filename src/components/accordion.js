@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const Accordion = ({title , content}) => {
+const Accordion = ({title , content , index}) => {
 
     const [isActive, setIsActive] = useState(false);
 

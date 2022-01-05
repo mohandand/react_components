@@ -25,7 +25,7 @@ function App() {
     <div className="maincontainer">
       <DropDown companies={companies}/>
       <div className="accordioncontainer">
-      {accordionData.map((item)=> <Accordion title={item.question} content={item.answer}/>)}
+      {accordionData.map((item,index)=> <Accordion title={item.question} content={item.answer} key={index}/>)}
       </div>
       <Modal/>
     </div>

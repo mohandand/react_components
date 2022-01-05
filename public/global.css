@@ -1,7 +1,7 @@
 .maincontainer{
     display: flex;
     flex-direction: row;
-    width:50%;
+    width:90%;
 }
 .dropdowncontainer{
     display: flex;
