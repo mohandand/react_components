@@ -12,7 +12,7 @@ const Modal = () => {
         <div className="modalcontainer">
             <button onClick={changeStyle}>Open Modal</button>
             <div className={modalstyle}>
-                <div class="modal-container">
+                <div className="modal-container">
                     <h2> Modal Box</h2>
                     <h3> Welcome to React Components</h3>
                 </div>
