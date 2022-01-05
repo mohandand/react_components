@@ -21,13 +21,14 @@ function App() {
     }
 ]
 
+let message ="Modal Box";
   return (
     <div className="maincontainer">
       <DropDown companies={companies}/>
       <div className="accordioncontainer">
       {accordionData.map((item,index)=> <Accordion title={item.question} content={item.answer} key={index}/>)}
       </div>
-      <Modal/>
+      <Modal message={message}/>
     </div>
   );
 }

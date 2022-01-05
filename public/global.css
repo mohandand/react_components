@@ -1,16 +1,24 @@
+
 .maincontainer{
     display: flex;
-    flex-direction: row;
-    width:90%;
+    flex-direction: column;
+    max-width:50%;
+    margin:0 auto;
+    background-color: aquamarine;
 }
 .dropdowncontainer{
     display: flex;
     flex-direction: column;
-    width:50%;
+    width:100%;
+    margin:5px 5px;
 }
 .accordioncontainer{
-    margin: 10px 10px 10px 10px;
-    width:70%;
+    margin:5px 5px;
+    width:100%;
+}
+.modalcontainer{
+    width:100%;
+    margin:5px 5px;
 }
 .dropdown{
     width:80%;
@@ -30,6 +38,7 @@
 
 h3{
     display:inline;
+    margin:5px 5px;
 }
 
 .hideText{
