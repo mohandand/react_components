@@ -21,7 +21,7 @@ function App() {
     }
 ]
 
-let message ="Modal Box";
+let message ="Welcome to Modal Box";
   return (
     <div className="maincontainer">
       <DropDown companies={companies}/>

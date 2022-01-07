@@ -17,14 +17,13 @@ const DropDown = ({ companies }) => {
     return(
         <div className="dropdowncontainer">
           <div className="dropdown">
-            <label className="dropdownname">Best Companies</label>
-            <select name="cars" id="cars" onChange={retriveOption}>
+            <select className="dropdown" name="cars" id="cars" onChange={retriveOption}>
                 {options}
             </select>
          </div>
-         <div className="displaybox">
+         {/* <div className="displaybox">
              {company}
-         </div>
+         </div> */}
         </div>
     )
 }

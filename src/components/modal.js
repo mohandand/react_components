@@ -16,15 +16,15 @@ const Modal = ({message}) => {
     let box = <div className={modalstyle}>
                 <div className="modal-container">
                      <h2> Modal Box</h2>
-                     <h3> Welcome to React Components</h3>
+                     <h3> {message} </h3>
                      <button onClick={() => setIsActive(!isActive)}>close</button>
                 </div> 
              </div>
 
     return(
         <div className="modalcontainer">
-            <button onClick={() => setIsActive(!isActive)}>Open Modal</button>
-            {isActive ? <div className="modal-container"><h2> {message}</h2><button onClick={() => setIsActive(!isActive)}>close</button> </div>: <></>}
+            <button  className="modalopen" onClick={() => setIsActive(!isActive)}>Open Modal</button>
+            {isActive ? <div className="modal-container"><h2> {message}</h2><button className="modalclose" onClick={() => setIsActive(!isActive)}>close</button> </div>: <></>}
         </div>
     )
 }
