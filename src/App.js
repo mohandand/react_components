@@ -9,15 +9,15 @@ function App() {
   let accordionData = [
     {
         "question":"section1",
-        "answer": "pen"
+        "answer": "Welcome to ReactJS"
     },
     {
         "question":"section2",
-        "answer": "bat"
+        "answer": "Welcome to NodeJS"
     },
     {
         "question":"section3",
-        "answer": "bat"
+        "answer": "Welcome to MongoDb"
     }
 ]
 

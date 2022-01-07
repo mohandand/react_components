@@ -6,11 +6,11 @@ const Accordion = ({title , content , index}) => {
 
    return(
         <div>
-          <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
+          <div className="accordion_title" onClick={() => setIsActive(!isActive)}>
             <h3>{title}</h3>
-            <button>{isActive ? '-' : '+'}</button>
+            <button className="expand">{isActive ? '-' : '+'}</button>
           </div>
-           { isActive ? <div className="accordion-content">{content}</div> : <></>}
+           { isActive ? <div className="accordion_content">{content}</div> : <></>}
        </div>
    )
 }

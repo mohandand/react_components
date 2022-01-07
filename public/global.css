@@ -4,7 +4,7 @@
     flex-direction: column;
     max-width:50%;
     margin:0 auto;
-    background-color: aquamarine;
+   
 }
 .dropdowncontainer{
     display: flex;
@@ -41,6 +41,36 @@ h3{
     margin:5px 5px;
 }
 
+
 .hideText{
     display: none;
+}
+
+.accordion_title{
+    width:50%;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin:5px 5px 0px 5px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.accordion_content{
+    width:80%;
+   
+}
+
+.expand{
+    border-radius:100px;
+    border: 1px solid black;
+    margin:2px 2px;
+    padding:2px 10px;
+}
+.accordion_content{
+    width:46%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin:0px 8px;
+    padding: 10px 10px;
 }
