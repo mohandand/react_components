@@ -2,9 +2,13 @@ import React from 'react';
 import DropDown from './components/DropDown';
 import Accordion from './components/accordion';
 import Modal from './components/modal';
+import {BrowserRouter,Route,Routes } from "react-router-dom";
+import Home from './components/Home';
+import ColorPicker from './components/ColorPicker';
 function App() {
 
   let companies =["Apple","Microsoft","Google","Amazon","ebay"];
+  let colors = ["red","blue","green"]
 
   let accordionData = [
     {
@@ -24,11 +28,20 @@ function App() {
 let message ="Welcome to Modal Box";
   return (
     <div className="maincontainer">
-      <DropDown companies={companies}/>
-      <div className="accordioncontainer">
-      {accordionData.map((item,index)=> <Accordion title={item.question} content={item.answer} key={index}/>)}
-      </div>
-      <Modal message={message}/>
+      <BrowserRouter>
+        <Home/>
+        <Routes >
+          <Route exact path="/dropdown"  element={<DropDown companies={companies}/>}/>
+          <Route exact path="/accordion"  element={
+             <div className="accordioncontainer">
+             {accordionData.map((item,index)=> <Accordion title={item.question} content={item.answer} key={index}/>)}
+             </div>
+          }/>
+          <Route exact path="/modal" element={<Modal message={message}/>}/>
+          <Route exact path="/colorpicker" element={<ColorPicker colors={colors}/>}/>
+        </Routes>
+      </BrowserRouter>
+      {/* <ColorPicker/> */}
     </div>
   );
 }

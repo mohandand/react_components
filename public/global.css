@@ -4,7 +4,17 @@
     flex-direction: column;
     max-width:50%;
     margin:0 auto;
+    background-color: antiquewhite;
+    height:593px;
    
+}
+.Menu{
+    display: flex;
+    flex-direction: row;
+    max-width:50%;
+    justify-content: start;
+    list-style-type: none;
+    margin: 10px 10px;
 }
 .dropdowncontainer{
     display: flex;
@@ -107,4 +117,31 @@ h3{
     margin:0px 8px;
     padding: 10px 10px;
     background-color: aliceblue;
+}
+li{
+    margin:10px 10px;
+    text-decoration: none;
+}
+.colorbox{
+    width:100px;
+    height:100px;
+    border:1px solid black;
+    border-radius: 20px;
+}
+.colorslist{
+    display:flex;
+    flex-direction: row;
+    margin: 5px 5px;
+    
+}
+.colors{
+    width:20px;
+    height:20px;
+    border:1px solid black;
+    margin: 5px 5px;
+    border-radius: 20px;
+}
+
+.colorpickercontainer{
+    margin-left: 40px;
 }

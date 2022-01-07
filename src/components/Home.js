@@ -1,0 +1,17 @@
+import { BrowserRouter,Switch,Route } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+const Home = () =>{
+    return(
+        <div>
+            <ul className="Menu">
+                <Link to="/dropdown"><button  className="modalopen">Dropdown</button></Link>
+                <Link to="/accordion"><button  className="modalopen">Accordion</button></Link>
+                <Link to="/Modal"><button  className="modalopen">Modal</button></Link>
+                <Link to="/colorpicker"><button  className="modalopen">ColorPicker</button></Link>
+            </ul>
+        </div>
+    )
+}
+
+export default Home;
