@@ -5,6 +5,8 @@ import Modal from './components/modal';
 import {BrowserRouter,Route,Routes } from "react-router-dom";
 import Home from './components/Home';
 import ColorPicker from './components/ColorPicker';
+import StopTimer from './components/StopTimer';
+import ToDo from './components/ToDo';
 function App() {
 
   let companies =["Apple","Microsoft","Google","Amazon","ebay"];
@@ -39,9 +41,9 @@ let message ="Welcome to Modal Box";
           }/>
           <Route exact path="/modal" element={<Modal message={message}/>}/>
           <Route exact path="/colorpicker" element={<ColorPicker colors={colors}/>}/>
+          <Route exact path="/todo" element={<ToDo/>}/>
         </Routes>
       </BrowserRouter>
-      {/* <ColorPicker/> */}
     </div>
   );
 }

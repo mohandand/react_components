@@ -145,3 +145,11 @@ li{
 .colorpickercontainer{
     margin-left: 40px;
 }
+.displaytasks{
+    width:200px;
+    height:100px;
+    border:1px solid black;
+    margin: 5px 5px;
+    border-radius: 20px;
+    background-color: aliceblue;
+}

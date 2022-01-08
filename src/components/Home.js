@@ -9,6 +9,8 @@ const Home = () =>{
                 <Link to="/accordion"><button  className="modalopen">Accordion</button></Link>
                 <Link to="/Modal"><button  className="modalopen">Modal</button></Link>
                 <Link to="/colorpicker"><button  className="modalopen">ColorPicker</button></Link>
+                <Link to="stoptimer"><button  className="modalopen">StopTimer</button></Link>
+                <Link to="todo"><button  className="modalopen">ToDo</button></Link>
             </ul>
         </div>
     )
