@@ -13,7 +13,7 @@ const ColorPicker = ({colors}) => {
     })
    
     return(
-        <div className="colorpickercontainer">
+        <div className="smallcontainer">
             <div className="colorbox" style={{backgroundColor:`${col}`}} >
             </div>
             <div className="colorslist">

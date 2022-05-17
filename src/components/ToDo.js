@@ -5,25 +5,34 @@ const ToDo = () => {
     const [tasks, setTasks] = useState([]);
 
     const getTask= (event) => {
+        event.preventDefault();
         setTask(event.target.value);
     }
     const pushTask = (event) => {
-        let newtask = tasks;
-        newtask.push(task);
+        event.preventDefault();
+        tasks.unshift(task);
+        const newtask = [...tasks]
         setTasks(newtask);
         console.log(tasks);
+    }
+
+    const deleteTask =(event) => {
+        event.preventDefault();
+        tasks.splice((event.target.id),1);
+        const temptask = [...tasks]
+        setTasks(temptask);
     }
     
 
     let taskslist = tasks.map((tas,index) => {
-                return <div key={index}>{tas}<button>X</button></div>
+                return <div className="taskname" key={index}>{tas}<button  id={index} onClick={deleteTask}>X</button></div>
     })
 
     return(
-        <div className="todocontainer">
+        <div className="smallcontainer">
             <div className="addtask">
                 <input type="text" onChange={getTask}/>
-                <button onClick={pushTask}>Add</button>
+                <button className="searchbutton" onClick={pushTask}>Add</button>
             </div>
             <div className="displaytasks">
                 {taskslist}

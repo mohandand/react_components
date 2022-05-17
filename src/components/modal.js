@@ -22,7 +22,7 @@ const Modal = ({message}) => {
              </div>
 
     return(
-        <div className="modalcontainer">
+        <div className="smallcontainer">
             <button  className="modalopen" onClick={() => setIsActive(!isActive)}>Open Modal</button>
             {isActive ? <div className="modal-container"><h2> {message}</h2><button className="modalclose" onClick={() => setIsActive(!isActive)}>close</button> </div>: <></>}
         </div>

@@ -2,7 +2,7 @@
 .maincontainer{
     display: flex;
     flex-direction: column;
-    max-width:50%;
+    max-width:60%;
     margin:0 auto;
     background-color: antiquewhite;
     height:593px;
@@ -57,7 +57,7 @@ h3{
 }
 
 .accordion_title{
-    width:50%;
+    width:100%;
     border: 1px solid black;
     border-radius: 20px;
     margin:5px 5px 0px 5px;
@@ -65,10 +65,11 @@ h3{
     flex-direction: row;
     justify-content: space-between;
     background-color: aliceblue;
+    padding:2px 2px;
     
 }
 .accordion_content{
-    width:80%;
+    width:100%;
    
 }
 
@@ -152,4 +153,34 @@ li{
     margin: 5px 5px;
     border-radius: 20px;
     background-color: aliceblue;
+}
+.taskname{
+    margin:3px 10px;
+}
+.smallcontainer{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+input{
+    margin:2px 7px;
+    border-radius: 10px;
+    height: 20px;
+}
+.searchbutton{
+    border-radius: 10px;
+    height: 25px;
+    padding:2px 2px;
+}
+.searchresults{
+    width:90%;
+    height:30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: aliceblue;
+    margin: 0px 6px;
+
+}
+span{
+    margin:2px 6px;
 }
